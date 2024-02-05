@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import os
 from pathlib import Path
 
@@ -6,7 +7,7 @@ os.getlogin
 def eDirectorio():
     f = str(input("Introduce o nome dun ficheiro: "))
     print(f)
-    ficheiro = Path('/media/a23elenaqb/a23elenaqb_documentos/SistemasInformaticos/PYTHON')
+    ficheiro = Path().absolute()
     q = ficheiro / f
     if q.exists():
         print("Existe")
@@ -53,7 +54,7 @@ def parImpar():
 opcion = " "
 while opcion != "f":
     print("MENÚ:")
-    print("a) Arquivos e directorios na home de alumno")
+    print("a) Arquivo ou directorio")
     print("b) Ano bisiesto")
     print("c) Área dun triángulo")
     print("d) Táboa de multiplicar")
